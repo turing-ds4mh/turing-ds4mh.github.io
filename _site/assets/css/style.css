@@ -845,11 +845,11 @@ form {
   margin-top: 0;
   margin-bottom: 0;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 2.8em;
-  font-weight: normal;
+  font-size: 60;
+  font-weight: black;
   color: #474747;
-  text-indent: 6px;
-  letter-spacing: 1px;
+  text-indent: 0px;
+  letter-spacing: 0px;
 }
 
 #main-content h2 {
@@ -1074,7 +1074,7 @@ footer a:hover {
   background-color: #228b23;
   overflow: hidden;
   position: relative;
-  width: 1020px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -1086,12 +1086,6 @@ footer a:hover {
   padding: 14px 16px;
   text-decoration: none;
   font-size: 16px;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: greenyellow;
-  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */
