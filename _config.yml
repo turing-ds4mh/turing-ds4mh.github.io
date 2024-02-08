@@ -1,0 +1,7 @@
+title: Data Science for Mental Health Interest Group
+description: DS4MH @ The Alan Turing Institute
+show_downloads: false
+google_analytics:
+theme: jekyll-theme-architect
+header_pages: 
+- index.md
