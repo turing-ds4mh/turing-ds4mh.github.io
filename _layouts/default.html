@@ -24,14 +24,16 @@
         </a>
         <h2>{{ site.description | default: site.github.project_tagline }}</h2>
       </div>
+      <div class="topnav">
+        {% for nav in site.data.navigation.main %}
+            <a href="{{ '/' | absolute_url }}{{ nav.url }}">{{ nav.title }}</a>
+        {% endfor %}
+      </div>
+
+
     </header>
 
-    <div class="topnav">
-      <a class="active" href="{{ '/' | absolute_url }}">Home</a>
-      {% for item in site.pages %}
-          <a href="{{ item.url }}">{{ item.title }}</a>
-      {% endfor %}
-    </div>
+
 
     <div id="content-wrapper">
       <div class="inner clearfix">

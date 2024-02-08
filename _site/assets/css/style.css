@@ -677,10 +677,9 @@ a:hover {
 
 header {
   padding-top: 25px;
-  padding-bottom: 25px;
+  padding-bottom: 0px;
   font-family: "Monospace", "Helvetica Neue", Helvetica, Arial, serif;
   background: #228b23 url(../images/header-bg.jpg) 0 0 repeat-x;
-  border-bottom: solid 1px #114412;
 }
 
 header h1 {
@@ -710,6 +709,7 @@ header h2 {
 .inner {
   position: relative;
   width: 1000px;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
 
@@ -729,7 +729,6 @@ header h2 {
 
 aside#sidebar {
   float: right;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   width: 150px;
   min-height: 600px;
   padding-left: 25px;
@@ -849,7 +848,7 @@ form {
   font-weight: normal;
   color: #474747;
   text-indent: 6px;
-  letter-spacing: -1px;
+  letter-spacing: 1px;
 }
 
 #main-content h2 {
@@ -858,7 +857,7 @@ form {
   font-size: 22px;
   font-weight: bold;
   color: #474747;
-  text-indent: 4px;
+  text-indent: 0px;
 }
 
 #main-content h3 {
@@ -1069,5 +1068,29 @@ footer a:hover {
 }
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+/* Navigation background */
+.topnav {
+  background-color: #228b23;
+  overflow: hidden;
+  position: relative;
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: greenyellow;
+  color: black;
+}
 
 /*# sourceMappingURL=style.css.map */
