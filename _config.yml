@@ -3,3 +3,9 @@ description: DS4MH @ The Alan Turing Institute
 show_downloads: false
 google_analytics:
 theme: jekyll-theme-architect
+
+pages:
+- title: Home
+  url: index.html
+- title: Meetings
+  url: meetings.html
