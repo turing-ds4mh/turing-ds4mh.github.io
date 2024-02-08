@@ -12,8 +12,6 @@ permalink: /meetings
 |            | 15:45 | **Dr. Josefien Breedvelt** <br> (King's College London)       | Preventing depressive relapse – what works for whom |
 |            | 16:20 |                     | After talks discussion |
 
-* * *
-
 ### Previous Talks
 
 * [2024](#2024)
