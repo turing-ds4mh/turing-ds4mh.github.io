@@ -813,8 +813,8 @@ ul, ol, dl {
 /* COMMON STYLES */
 hr {
   height: 0;
-  margin-top: 10em;
-  margin-bottom: 1em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   border: 0;
   border-top: solid 1px #ddd;
 }
@@ -830,8 +830,9 @@ th {
 
 td {
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   border: 1px solid #ebebeb;
+  padding: 0.2em;
 }
 
 form {
@@ -867,16 +868,16 @@ form {
   font-size: 18px;
   font-weight: bold;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 
 #main-content h4 {
   margin-bottom: 8px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
   color: #474747;
-  text-indent: 3px;
+  text-indent: 0px;
 }
 
 #main-content h5 {

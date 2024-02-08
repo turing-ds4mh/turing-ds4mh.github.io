@@ -38,6 +38,45 @@
       <div class="inner clearfix">
         <section id="main-content">
           {{ content }}
+
+          <h3> Upcoming Events </h3>
+
+          <h4> Meetings </h4>
+          <table border="1">
+            <tr>
+                <th style="width:100px;">Date</th>
+                <th style="width:80px;">Time</th>
+                <th style="width:250px;">Presenter</th>
+                <th style="width:800px;">Title</th>
+            </tr>
+            {% for meeting in site.data.talks_upcoming.meetings %}
+              <tr>
+                  <td>{{ meeting.date }} </td>
+                  <td>{{ meeting.start }} </td>
+                  <td></td>
+                  <td>Introduction</td>
+              </tr>
+              {% for talk in meeting.details %}
+              <tr>
+                <td></td>
+                <td>{{ talk.time }}</td>
+                {% if talk contains "speaker_2" %}
+                  <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }} </strong> <br> ({{ talk.affiliation_2 }}) </td>
+                  <td><strong>{{ talk.title }}</strong> <p>{{ talk.abstract }} </p></td>
+                {% else %}
+                  <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+                  <td><strong>{{ talk.title }}</strong> <p>{{ talk.abstract }} </p></td>
+                {% endif %}
+              </tr>
+              {% endfor %}
+            <tr>
+                <td></td>
+                <td>{{ meeting.end }}</td>
+                <td></td>
+                <td>After talks discussion</td>
+            </tr>
+          {% endfor %}
+          </table>
         </section>
 
         <aside id="sidebar">
