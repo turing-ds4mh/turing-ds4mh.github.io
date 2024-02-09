@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,800");
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
@@ -751,7 +752,7 @@ a.button {
   height: 58px;
   padding-top: 22px;
   padding-left: 68px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 23px;
   line-height: 1.2;
   color: #fff;
@@ -844,9 +845,9 @@ form {
 #main-content h1 {
   margin-top: 0;
   margin-bottom: 0;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Raleway", Arial, sans-serif;
   font-size: 60;
-  font-weight: black;
+  font-weight: 700;
   color: #474747;
   text-indent: 0px;
   letter-spacing: 0px;
@@ -854,7 +855,7 @@ form {
 
 #main-content h2 {
   margin-bottom: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #474747;
@@ -864,7 +865,7 @@ form {
 #main-content h3 {
   margin-top: 24px;
   margin-bottom: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   color: #474747;
@@ -873,7 +874,7 @@ form {
 
 #main-content h4 {
   margin-bottom: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 16px;
   font-weight: bold;
   color: #474747;
@@ -882,7 +883,7 @@ form {
 
 #main-content h5 {
   margin-bottom: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 14px;
   color: #474747;
   text-indent: 3px;
@@ -890,7 +891,7 @@ form {
 
 #main-content h6 {
   margin-bottom: 8px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
   font-size: 0.8em;
   color: #474747;
   text-indent: 3px;
