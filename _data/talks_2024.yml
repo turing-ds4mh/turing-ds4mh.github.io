@@ -2,7 +2,7 @@ meetings:
   - date: "2024.02.15"
     start: "15:00"
     end: "16:20"
-    is_upcoming: "True"
+    is_upcoming: "False"
     details:
     - time: "15:05"
       title: "Computational models of learning to understand and improve change mechanisms in psychotherapy"
