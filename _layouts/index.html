@@ -34,6 +34,15 @@
       <section id="main-content">
         {{ content }}
 
+        <!-- Check if there is data for confirmed future talks -->
+        {% assign has_future_talk = false %}
+        {% for meeting in site.data.talks_2024.meetings %}
+        {% if meeting.is_upcoming == "True" %}
+        {% assign has_future_talk = true %}
+        {% endif %}
+        {% endfor %}
+
+        {% if has_future_talk == true %}
         <h3> Upcoming Events </h3>
 
         <h4> Meetings </h4>
@@ -82,6 +91,9 @@
           {% endif %}
           {% endfor %}
         </table>
+        {% endif %}
+
+
 
       </section>
 
