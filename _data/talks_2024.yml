@@ -1,4 +1,19 @@
 meetings:
+  - date: "2024.04.18"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "Implementation and dynamic refinement of clinical prediction models to enhance psychosis prevention"
+      speaker: "Dr. Dominic Oliver"
+      affiliation: "University of Oxford"
+      abstract: "Detection of individuals at clinical high risk of psychosis is sub-optimal and inefficient, limiting the potential of effective primary indicated prevention. To address this, we previously developed, validated and implemented clinical prediction models using routinely collected electronic health record data for individuals at risk of psychosis in secondary mental health care. However, this model can only produce a single risk estimation at baseline, whereas individuals’ symptoms and substance use changes over time, and so does their psychosis risk. This talk will outline our past and ongoing implementation work as well as efforts to refine the model to dynamically update risk estimates as new information is entered into patients’ electronic health records."
+    - time: "15:45"
+      title: "Actor-critic graph neural networks: A complete recipe for neural decoding"
+      speaker: "Dr. Wenzhuo Zhou"
+      affiliation: "University of California Irvine"
+      abstract: "In recent years, graphs have become one of the most powerful abstractions for complex data, including brain networks, knowledge graphs, purchasing behavior, as well as disease pathways. Among many graph representation learning approaches, Graph Neural Networks (GNNs) have achieved promising performance in a variety of graph-focused tasks. Despite their success, existing GNNs suffer from two significant limitations that hinder their broader applications in scientific discovery: a lack of interpretability in results due to their black-box nature, and an inability to learn representations of varying order information with statistical guarantees. In this talk, I will present a novel Actor-Critic Graph Neural Network (AC-GNN), which is able to integrate information of various orders under graph topology and provide interpretable results by identifying compact subgraph structures. Statistically, we establish the generalization error bound for AC-GNN via empirical Rademacher complexity, and showcase its power to represent layer-wise neighborhood mixing. Comprehensive numerical experiments using benchmark and synthetic datasets are conducted. Interestingly, we use AC-GNN to decode the behavior-oriented information from neuronal activity signals and confirm several important conjectures in neurobiology, thereby highlighting its effectiveness in advancing scientific research."
   - date: "2024.02.15"
     start: "15:00"
     end: "16:20"
