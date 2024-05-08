@@ -17,7 +17,7 @@ meetings:
   - date: "2024.04.18"
     start: "15:00"
     end: "16:20"
-    is_upcoming: true
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "Implementation and dynamic refinement of clinical prediction models to enhance psychosis prevention"
