@@ -1,4 +1,19 @@
 meetings:
+  - date: "2024.05.16"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "The Power of Speech in the Wild: Discriminative Power of Daily Voice Diaries in Understanding Auditory Verbal Hallucinations Using Deep Learning"
+      speaker: "Dr. Weichen Wang"
+      affiliation: "Meta/Dartmouth College"
+      abstract: "Mobile phone sensing is increasingly being used in clinical research studies to assess a variety of mental health conditions (e.g., depression, psychosis). However, in-the-wild speech analysis -- beyond conversation detecting -- is a missing component of these mobile sensing platforms and studies. We augment an existing mobile sensing platform with a daily voice diary to assess and predict the severity of auditory verbal hallucinations (i.e., hearing sounds or voices in the absence of any speaker), a condition that affects people with and without psychiatric or neurological diagnoses. We collect 4809 audio diaries from N=384 subjects over a one-month-long study period. We investigate the performance of various deep-learning architectures using different combinations of sensor behavioral streams (e.g., voice, sleep, mobility, phone usage, etc.) and show the discriminative power of solely using audio recordings of speech as well as automatically generated transcripts of the recordings."
+    - time: "15:45"
+      title: "Applied informatics to improve outcomes in severe mental illness"
+      speaker: "Prof. Joseph Hayes"
+      affiliation: "UCL"
+      abstract: "Severe mental illness (schizophrenia, bipolar disorder and other psychotic illness) is associated with considerable morbidity and premature mortality. Drug development for these conditions has slowed and a third of patients have a limited response to medication. The scale of the United Kingdom’s electronic health records facilitates large studies examining disease clustering, medication response prediction, adverse event tracking and symptom forecasting using machine learning approaches. Recent examples of this work from the aiMH Lab, Division of Psychiatry, UCL, will be discussed. These methods have the potential to improve physical and psychiatric outcomes in patients with severe mental illness."
   - date: "2024.04.18"
     start: "15:00"
     end: "16:20"
