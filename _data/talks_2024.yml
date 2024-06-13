@@ -1,8 +1,23 @@
 meetings:
-  - date: "2024.05.16"
+  - date: "2024.06.20"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "Facial Prior Based First Order Motion Model for Micro-expression Generation"
+      speaker: "Yi Zhang"
+      affiliation: "Peking University"
+      abstract: "TBA"
+    - time: "15:45"
+      title: "Time topological analysis of EEG using signature theory"
+      speaker: "Rémi Vaucher"
+      affiliation: "University of Lyon 2"
+      abstract: "TBA"
+  - date: "2024.05.16"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "The Power of Speech in the Wild: Discriminative Power of Daily Voice Diaries in Understanding Auditory Verbal Hallucinations Using Deep Learning"
