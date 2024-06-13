@@ -13,7 +13,7 @@ meetings:
       title: "Facial Prior Based First Order Motion Model for Micro-expression Generation"
       speaker: "Yi Zhang"
       affiliation: "Peking University"
-      abstract: TBA
+      abstract: "This report focuses on the facial micro-expression (FME) generation task, which has potential application in enlarging digital FME datasets, thereby alleviating the lack of training data with labels in existing micro-expression datasets. FME generation remains challenging because existing generation methods can hardly encode subtle and short-term facial motion information. To this end, we present a facial-prior-guided FME generation framework that takes advantage of facial priors for facial motion generation. To achieve smooth and realistic synthesis results, we use our proposed facial prior module to guide motion representation and generation modules in mainstream image animation frameworks. Extensive experiments show that our proposed facial prior module can be adopted in image animation frameworks and significantly improve their performance on micro-expression generation. Moreover, we use the generation technique to enlarge existing datasets, thereby improving the performance of general action recognition backbones on the FME recognition task."
   - date: "2024.05.16"
     start: "15:00"
     end: "16:20"
