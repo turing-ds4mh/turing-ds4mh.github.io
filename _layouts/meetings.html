@@ -117,7 +117,7 @@
             <th style="width:800px;">Title</th>
           </tr>
           {% for meeting in site.data.talks_2024.meetings %}
-          {% if meeting.is_upcoming != "True" %}
+          {% if meeting.is_upcoming != "true" %}
           <tr>
             <td>{{ meeting.date }} </td>
             <td>{{ meeting.start }} </td>
