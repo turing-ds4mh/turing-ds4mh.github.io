@@ -1,8 +1,23 @@
 meetings:
-  - date: "2024.06.20"
+  - date: "2024.07.18"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "ALBA: Adaptive Language-based Assessments for Mental Health"
+      speaker: "Vasudha Varadarajan"
+      affiliation: "Stony Brook University"
+      abstract: "Language-based assessments are promising for capturing diverse mental health diagnoses but need many words per person for accuracy. This talk introduces Adaptive Language-Based Assessment (ALBA), which adapts future prompts based on previous responses. ALBA iteratively selects the next best question to refine the estimate of an individual's psychological traits using limited responses. ALBA paves the way for conversational diagnostic agents, enabling dynamic scoring and personalized interactions. This approach improves diagnostic accuracy, reduces time for patients and clinicians, and enhances personalization in assessments."
+    - time: "15:45"
+      title: "Social Robots as Communication Partners to Support Emotional Health and Well-Being"
+      speaker: "Dr. Guy Laban"
+      affiliation: "University of Cambridge"
+      abstract: "As society increasingly integrates artificial intelligence (AI) technologies designed for social interaction, understanding the communication dynamics between humans and social robots becomes essential. In this talk, I will present my research that explores the intersection of AI and human interpersonal communication. My studies focus on the dynamics of human-robot interaction, particularly how robots can foster meaningful social interactions that encourage users to express their emotions and feelings. In my research, I study how these interactions evolve over time, their potential for supporting emotional well-being, and their application in various settings such as caregiving and counselling. Through a series of experiments, my research uncovers the nuances of dialogue, self-disclosure, and emotion regulation in the context of social relationships with robots. The findings illuminate the varying degrees of emotional engagement exhibited towards robots, including how individuals adapt to and become comfortable with them over time, share their emotions, and experience positive effects in supporting their well-being."
+  - date: "2024.06.20"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "Time Topological Analysis of EEG, a novel approach to unveil pre-critical behavior of epileptic seizure"
@@ -13,7 +28,7 @@ meetings:
       title: "Facial Prior Guided Micro-Expression Generation"
       speaker: "Yi Zhang"
       affiliation: "Peking University"
-      abstract: "This report focuses on the facial micro-expression (FME) generation task, which has potential application in enlarging digital FME datasets, thereby alleviating the lack of training data with labels in existing micro-expression datasets. FME generation remains challenging because existing generation methods can hardly encode subtle and short-term facial motion information. To this end, we present a facial-prior-guided FME generation framework that takes advantage of facial priors for facial motion generation. To achieve smooth and realistic synthesis results, we use our proposed facial prior module to guide motion representation and generation modules in mainstream image animation frameworks. Extensive experiments show that our proposed facial prior module can be adopted in image animation frameworks and significantly improve their performance on micro-expression generation. Moreover, we use the generation technique to enlarge existing datasets, thereby improving the performance of general action recognition backbones on the FME recognition task."
+      abstract: "This talk focuses on the facial micro-expression (FME) generation task, which has potential application in enlarging digital FME datasets, thereby alleviating the lack of training data with labels in existing micro-expression datasets. FME generation remains challenging because existing generation methods can hardly encode subtle and short-term facial motion information. To this end, we present a facial-prior-guided FME generation framework that takes advantage of facial priors for facial motion generation. To achieve smooth and realistic synthesis results, we use our proposed facial prior module to guide motion representation and generation modules in mainstream image animation frameworks. Extensive experiments show that our proposed facial prior module can be adopted in image animation frameworks and significantly improve their performance on micro-expression generation. Moreover, we use the generation technique to enlarge existing datasets, thereby improving the performance of general action recognition backbones on the FME recognition task."
   - date: "2024.05.16"
     start: "15:00"
     end: "16:20"
