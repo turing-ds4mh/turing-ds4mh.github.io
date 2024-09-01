@@ -1,4 +1,19 @@
 meetings:
+  - date: "2024.09.19"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "Using Adaptive Bandit Algorithms and LLM Agents for Improving Engagement with Digital Mental Health Interventions"
+      speaker: "Harsh Kumar"
+      affiliation: "University of Toronto"
+      abstract: "Engagement is a critical, though not sufficient, component for the success of digital mental health interventions. In this talk, I will explore how adaptive bandit experiments, leveraging algorithms like Thompson Sampling, can be utilized to investigate and enhance user engagement in digital mental health (DMH) interventions. These algorithms can offer the potential for continuous personalization and ensure robust data collection for social-behavioral analysis. Building on this, I will discuss the emerging role of Large Language Models (LLMs) in providing scalable social support within DMH interventions. Our recent randomized experiments found that LLM agents, especially those designed to offer information with a friendly persona, significantly boosted user engagement in mindfulness exercises. Finally, I will discuss ongoing work at the intersection of adaptive algorithms and LLMs, highlighting the potential for developing personalized AI coaches and friends to further support mental health in a more adaptive and responsive manner."
+    - time: "15:40"
+      title: "Towards a Digital Self-Management Platform for People with Severe Mental Illness"
+      speaker: "Prof. Emiel Krahmer"
+      affiliation: "Tilburg University"
+      abstract: "Many people with a severe mental illness, like depression or schizophrenia, have long episodes in which they are doing relatively well. The question arises how we can better support people during these periods, with the aim of preventing relapse, but without overburdening patients or care givers. For this purpose, we are currently developing (and plan to thoroughly evaluate) a platform for digital self-management that aims to help people with, for example, a history of depression to better monitor their own current well-being. The platform integrates an existing experience sampling method (a mobile app which asks participants repeatedly to briefly report on, for example, their thoughts, activities, and emotions on various moments during the day) and we will explore to what extent other sources of information can be integrated in this platform as well, such text, speech and video. This Dutch research project is part of a recently established Academic Collaborative Center for Digital Health & Mental Wellbeing at Tilburg University. In this center, researchers from a broad range of disciplines work together with societal partners on important and current challenges related to health and wellbeing."
   - date: "2024.07.18"
     start: "15:00"
     end: "16:20"
