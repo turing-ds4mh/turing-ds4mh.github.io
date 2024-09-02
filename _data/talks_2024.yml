@@ -17,7 +17,7 @@ meetings:
   - date: "2024.07.18"
     start: "15:00"
     end: "16:20"
-    is_upcoming: true
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "ALBA: Adaptive Language-based Assessments for Mental Health"
