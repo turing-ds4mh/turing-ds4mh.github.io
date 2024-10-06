@@ -1,8 +1,23 @@
 meetings:
-  - date: "2024.09.19"
+  - date: "2024.10.17"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "Deploying an Accessible LLM-based Conversational Agent in a Hospital"
+      speaker: "Dr. Angus Addlesee"
+      affiliation: "Amazon Alexa"
+      abstract: "We deployed an LLM-based spoken dialogue system in a hospital for over a year. Using generative AI and the ARI robot, real patients and their companions had conversations with our system while waiting for their next appointment. They asked for directions, asked about the cafe menu, asked for jokes, played quizzes, and enjoyed some light distraction from their otherwise stressful day. This multi-party setting in the hospital memory clinic is extremely challenging, requiring computer vision, speech understanding, and gesture generation (arm, head, and eye movements).\n\nIn this talk, Angus will describe this complex setting and the architecture of the dialogue system. Our system decides when it should take its turn, generates human-like clarification requests when the patient pauses mid-utterance (to improve accessibility for people with dementia), answers in-domain questions (grounding to the in-prompt knowledge), and responds appropriately to out-of-domain requests (like generating jokes or quizzes). This latter feature is particularly remarkable, as real patients often utter unexpected sentences that could not be handled previously."
+    - time: "15:40"
+      title: "TBA"
+      speaker: "Dr. Baihan Lin"
+      affiliation: "Icahn School of Medicine at Mount Sinai"
+      abstract: ""
+  - date: "2024.09.19"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "Using Adaptive Bandit Algorithms and LLM Agents for Improving Engagement with Digital Mental Health Interventions"
@@ -92,6 +107,7 @@ meetings:
   - date: "2024.01.18"
     start: "15:00"
     end: "16:20"
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "Language and mental health: measures of emotion dynamics from text as linguistic biosocial markers"
