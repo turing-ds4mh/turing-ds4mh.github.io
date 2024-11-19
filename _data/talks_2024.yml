@@ -1,8 +1,23 @@
 meetings:
-  - date: "2024.10.17"
+  - date: "2024.11.21"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+    - time: "15:05"
+      title: "Detecting Bipolar Disorder from Misdiagnosed Major Depressive Disorder with Mood-Aware Multi-Task Learning"
+      speaker: "Dr Daeun Lee"
+      affiliation: "Sungkyunkwan University, Seoul"
+      abstract: "Bipolar Disorder (BD) is a mental disorder characterized by intense mood swings, from depression to manic states. Individuals with BD are at a higher risk of suicide, but BD is often misdiagnosed as Major Depressive Disorder (MDD) due to shared symptoms, resulting in delays in appropriate treatment and increased suicide risk. While early intervention based on social media data has been explored to uncover latent BD risk, little attention has been paid to detecting BD from those misdiagnosed as MDD. Therefore, this study presents a novel approach for identifying BD risk in individuals initially misdiagnosed with MDD. A unique dataset, BD-Risk, is introduced, incorporating mental disorder types and BD mood levels verified by two clinical experts. The proposed multi-task learning for predicting BD risk and BD mood level outperforms the state-of-the-art baselines. Also, the proposed dynamic mood-aware attention can provide insights into the impact of BD mood on future risk, potentially aiding interventions for at-risk individuals."
+    - time: "15:40"
+      title: "Cortical morphological networks for profiling autism spectrum disorder using tensor component analysis"
+      speaker: "Kubra Cengiz"
+      affiliation: "Istanbul Technical University"
+      abstract: "Atypical neurodevelopmental disorders such as Autism Spectrum Disorder (ASD) can result in changes to cortical morphology at different levels, influencing brain structure and connectivity. In this talk, I will introduce a novel approach using multi-view cortical morphological networks (CMNs), derived from T1-weighted MRI, to study and fingerprint the brain's cortical morphology in ASD compared to neurotypical individuals. This research explores cortical morphology on three levels: individual regions, pairwise region relationships, and multi-view relationships across different cortical attributes such as cortical thickness. Using tensor component analysis, we identify the most representative morphological connectivities shared across CMN views for both the ASD and neurotypical populations. Our findings highlight how specific brain regions, including the temporal, frontal, and insular lobes, are structurally different in ASD individuals, and how these differences correspond to clinical features observed in patients."
+  - date: "2024.10.17"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
     - time: "15:05"
       title: "Deploying an Accessible LLM-based Conversational Agent in a Hospital"
