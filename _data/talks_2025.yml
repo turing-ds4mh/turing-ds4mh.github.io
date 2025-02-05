@@ -1,0 +1,31 @@
+meetings:
+  - date: "2025.02.20"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "Personalized Personality Modeling with Gaussian Processes: Insights from a New Longitudinal Dataset"
+        speaker: "Yehu Chen"
+        affiliation: "Washington University in St. Louis"
+        abstract: "The Big Five Personality framework has been widely used in social science to study socioeconomic and political behavior. However, an ongoing debate in psychology questions whether personality research should prioritize universal principles (nomothetic) or focus on individual-specific patterns (idiographic). To address this gap, we collect the first large-scale longitudinal personality dataset of its kind and introduce the Idiographic Personality Gaussian Process (IPGP) framework for modeling dynamic psychological traits. We first validate IPGP through factor analysis on standard cross-sectional datasets, and then apply IPGP to uncover individualized personality patterns on our longitudinal dataset. We also demonstrate how external environments influence internal personality traits using our framework, offering new insights into personalized psychological assessment."
+      - time: "15:40"
+        title: "Lived Experience Centered AI in Mental Health"
+        speaker: "Dr. Dong Whi Yoo"
+        affiliation: "Kent State University"
+        abstract: "Artificial intelligence (AI) holds transformative potential in mental health, offering solutions to critical challenges such as resource scarcity and lack of awareness. However, the rapid advancements and hype surrounding AI often marginalize the voices of those most impacted—people with lived experiences of mental health concerns. This talk examines how individuals with lived experience perceive mental health AI technologies and explores how to design solutions centered around their values and needs. First, I studied a federally funded mental health AI research project, examining how individuals with lived experiences were treated primarily as data contributors rather than as research partners. Building on these insights, I explore how meaningful collaborations with these individuals can inform the design of a schizophrenia relapse management tool. I also investigate the potential of large language models (LLMs) in supporting self-management of depression, focusing on the unique perspectives and priorities of those with lived experience. By centering these voices, this work highlights the need for inclusive innovation and reimagines the role of AI in the future of mental health."
+  - date: "2025.01.16"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
+    details:
+      - time: "15:05"
+        title: "Taking a turn for the better: Conversation redirection throughout the course of mental-health therapy"
+        speaker: "Vivian Nguyen & Dave Jung"
+        affiliation: "Cornell University"
+        abstract: "Mental-health therapy involves a complex conversation flow in which patients and therapists continuously negotiate what should be talked about next. For example, therapists might try to shift the conversation's direction to keep the therapeutic process on track and avoid stagnation, or patients might push the discussion towards issues they want to focus on. How do such patient and therapist redirections relate to the development and quality of their relationship? To answer this question, we introduce a probabilistic measure of the extent to which a certain utterance immediately redirects the flow of the conversation, accounting for both the intention and the actual realization of such a change. We apply this new measure to characterize the development of patient-therapist relationships over multiple sessions in a very large, widely-used online therapy platform. Our analysis reveals that (1) patient control of the conversation's direction generally increases relative to that of the therapist as their relationship progresses; and (2) patients who have less control in the first few sessions are significantly more likely to eventually express dissatisfaction with their therapist and terminate the relationship."
+      - time: "15:40"
+        title: "Smart Sensing in Dementia Care: Lightweight, Explainable AI Validated for Early Warning of Health Events in the Home"
+        speaker: "Nivedita Bijlani"
+        affiliation: "University of Surrey"
+        abstract: "Sensor-based remote health monitoring for people living with dementia in their home enables the early detection of adverse health events, reducing the risk of hospitalisation. However, real-world home sensor data present challenges such as noise, sparse and imprecise labelling, inter-household variability, and the need for clinical explainability. To address these challenges, we developed a lightweight, explainable AI pipeline for anomaly detection in home sensor data, aimed at facilitating early health event detection. Validated in an ongoing real-world dementia monitoring study, the pipeline employs a self-supervised contrastive learning model to generate noise-resilient daily representations, compute anomaly scores, and trigger alerts based on household-personalised thresholds. Novel 'spatiotemporal attention maps' provide insights into the source and timing of anomalies, offering clinicians interpretable insights into atypical behaviour patterns. Additionally, LLM-powered anomaly summaries enhance clinical interpretability. Validation on a 90-patient cohort (40,866 person-days; May 2022 - Feb 2024) demonstrated high sensitivity and generalisability. The system was developed for the Minder Research Study, launched in August 2019 by the UK Dementia Research Institute Care Research and Technology Centre at Imperial College London, in partnership with the University of Surrey, and Surrey and Borders Partnership NHS Trust."
