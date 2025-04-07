@@ -1,8 +1,23 @@
 meetings:
-  - date: "2025.03.20"
+  - date: "2025.04.17"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "Combining Clinical Embeddings with Multi-Omic Features for Improved Patient Classification and Interpretability in Parkinson’s disease"
+        speaker: "Barry Ryan"
+        affiliation: "University of Edinburgh"
+        abstract: "This talk will demonstrate the integration of Large Language Model (LLM)-derived clinical text embeddings from the Movement Disorder Society Unified Parkinson’s Disease Rating Scale (MDS-UPDRS) questionnaire with molecular genomics data to enhance patient classification and interpretability in Parkinson’s disease. By combining genomic modalities encoded using an interpretable biological architecture with a patient similarity network constructed from clinical text embeddings, the approach leverages both clinical and genomic information to provide a robust, interpretable model for disease classification and molecular insights."
+      - time: "15:40"
+        title: "Working with Screenomes to Build Person-Specific Models of Smartphone Use and Mental Health"
+        speaker: "Merve Cerit"
+        affiliation: "Stanford University"
+        abstract: "In this talk, we will present our work on building person-specific models of smartphone use and mental health using high-frequency Screenome data. We will begin by sharing findings from an intensive longitudinal study that tracked individuals’ digital behaviors and mental health over time, using person-specific analyses to uncover nuanced, within-person associations that are often obscured in group-level studies. Building on this foundation, we will introduce the Media Content Atlas, a computational pipeline that leverages multimodal large language models to analyze and visualize millions of smartphone screenshots. This tool enables content-based clustering, topic modeling, and interactive exploration of digital experiences—offering researchers a scalable way to study how individuals engage with diverse forms of media. Together, these projects advance a new paradigm of personalized digital phenotyping, highlighting how quantitative methods can support tailored insights and interventions for mental health."
+  - date: "2025.03.20"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "PATIENT-Ψ: Using Large Language Models to Simulate Patients for Training Mental Health Professionals"
