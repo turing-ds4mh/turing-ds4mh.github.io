@@ -1,8 +1,23 @@
 meetings:
-  - date: "2025.04.17"
+  - date: "2025.05.15"
     start: "15:00"
     end: "16:20"
     is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "Do Large Language Models Align with Core Mental Health Counseling Competencies?"
+        speaker: "Viet Cuong (Johnny) Nguyen"
+        affiliation: "Georgia Institute of Technology"
+        abstract: "The rapid evolution of Large Language Models (LLMs) offers promising potential to alleviate the global scarcity of mental health professionals. However, LLMs' alignment with essential mental health counseling competencies remains understudied. We introduce CounselingBench, a novel NCMHCE-based benchmark evaluating LLMs across five key mental health counseling competencies. Testing 22 general-purpose and medical-finetuned LLMs, we find frontier models exceed minimum thresholds but fall short of expert-level performance, with significant variations: they excel in Intake, Assessment & Diagnosis yet struggle with Core Counseling Attributes and Professional Practice & Ethics. Medical LLMs surprisingly underperform generalist models accuracy-wise, while at the same time producing slightly higher-quality justifications but making more context-related errors. Our findings highlight the complexities of developing AI systems for mental health counseling, particularly for competencies requiring empathy and contextual understanding. We found that frontier LLMs perform at a level exceeding the minimal required level of aptitude for all key mental health counseling competencies, but fall short of expert-level performance, and that current medical LLMs do not significantly improve upon generalist models in mental health counseling competencies. This underscores the critical need for specialized, mental health counseling-specific fine-tuned LLMs that rigorously aligns with core competencies combined with appropriate human supervision before any responsible real-world deployment can be considered."
+      - time: "15:40"
+        title: "Modeling Subjectivity in Cognitive Appraisal with Language Models"
+        speaker: "Yuxiang Zhou"
+        affiliation: "QMUL/KCL"
+        abstract: "As the utilization of language models in interdisciplinary, human-centered studies grow, the expectation of model capabilities continues to evolve. Beyond excelling at conventional tasks, models are recently expected to perform well on user-centric measurements involving confidence and human (dis)agreement- factors that reflect subjective preferences. While modeling of subjectivity plays an essential role in cognitive science and has been extensively studied, it remains under-explored within the NLP community. In light of this gap, we explore how language models can harness subjectivity by conducting comprehensive experiments and analysis across various scenarios using both fine-tuned models and prompt-based large language models (LLMs). Our quantitative and qualitative experimental results indicate that existing post-hoc calibration approaches often fail to produce satisfactory results. However, our findings reveal that personality traits and demographical information are critical for measuring subjectivity. Furthermore, our in-depth analysis offers valuable insights for future research and development in the interdisciplinary studies of NLP and cognitive science."
+  - date: "2025.04.17"
+    start: "15:00"
+    end: "16:20"
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "Combining Clinical Embeddings with Multi-Omic Features for Improved Patient Classification and Interpretability in Parkinson’s disease"
