@@ -17,7 +17,7 @@ meetings:
   - date: "2025.05.15"
     start: "15:00"
     end: "16:20"
-    is_upcoming: true
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "Do Large Language Models Align with Core Mental Health Counseling Competencies?"
