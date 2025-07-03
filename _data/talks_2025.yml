@@ -1,8 +1,18 @@
 meetings:
+  - date: "2025.07.17"
+    start: "15:00"
+    end: "15:50"
+    is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "Designing Human-AI Interactions for Promoting Human Flourishing"
+        speaker: "Dr. Pat Pataranutaporn"
+        affiliation: "MIT"
+        abstract: "Creating AI systems that augment human capabilities and promote personal and societal flourishing demands expertise in multiple research fields. My research takes an interdisciplinary, human-centered approach to the development of personal AI systems and the understanding of the complexity of human-AI interaction. More specifically, my research: (1) Creates novel AI prototypes through personalized multi-modal systems that support human flourishing by facilitating learning and enhancing well-being; (2) Examining the science of human augmentation by AI systems through large-scale experimental studies that reveal the effects of AI on human decision-making, sense-making, behavior, beliefs, sense of self, and other critical aspects; (3) Proposes new techniques including novel platforms and tools that others can use to implement human augmentation systems; and (4) Develops novel research methods that combine qualitative and quantitative analyses of human-AI interaction. The goal of my work is to establish a new discipline that focuses on the science of human-AI interaction for human augmentation and empowers AI developers with a more informed understanding of the implications of design choices for AI systems that interact with humans. My hope is to catalyze a new intellectual renaissance and contribute to the advancement of AI that benefits the human experience."
   - date: "2025.06.19"
     start: "15:00"
     end: "16:20"
-    is_upcoming: true
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "Navigating the Digital Landscape: Understanding the Impact of Social Media on Youth Health"
