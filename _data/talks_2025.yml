@@ -1,8 +1,18 @@
 meetings:
-  - date: "2025.07.17"
+  - date: "2025.09.18"
     start: "15:00"
     end: "15:50"
     is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "LLM-Augmented Mental Health Care: From Linguistic Markers to Clinical Applications"
+        speaker: "Dr. Matteo Malgaroli"
+        affiliation: "NYU"
+        abstract: "The assessment and treatment of mental health conditions face ongoing challenges in terms of scalability and subjectivity. The integration of Large Language Models (LLMs) presents a potential solution by automating key clinical tasks and augmenting provider capabilities. In this talk, I will: (1) present findings on using linguistic markers to capture mental health symptoms from clinical conversations; (2) discuss findings on the capabilities of LLMs to assess mental health diagnoses and symptoms; and (3) explore preliminary findings on using LLMs for clinical care, and (4) outline ongoing efforts to deploy these technologies while addressing critical challenges in privacy, equity, and safety."
+  - date: "2025.07.17"
+    start: "15:00"
+    end: "15:50"
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "Designing Human-AI Interactions for Promoting Human Flourishing"
