@@ -12,7 +12,7 @@ The vision for this interest group is to kick-start one or more projects using c
 
 ## Events
 ### Meetings
-We organise monthly meetings (including half-an-hour long invited talks) at the Turing. Meetings are organised and moderated by [Jenny Chim](https://j-chim.github.io/), [Yue Wu](https://datasig.ac.uk/people/yue-wu), and [Emilio Ferrucci](https://people.maths.ox.ac.uk/rossiferrucc/). Please [join our mailing list](https://forms.office.com/e/N0SaJbSnek) for more updated information.
+We organise monthly meetings (including half-an-hour long invited talks) at the Turing. Meetings are organised and moderated by Iqra Ali and [Yue Wu](https://datasig.ac.uk/people/yue-wu). Please [join our mailing list](https://forms.office.com/e/N0SaJbSnek) for more updated information.
 
 As a part of AI UK Fringe, we jointly organised a hybrid event with the NLP interest group on [AI for Mental Health Monitoring](/aiuk2024.html) on 28th March 2024.
 
