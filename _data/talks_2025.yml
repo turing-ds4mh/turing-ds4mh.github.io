@@ -1,10 +1,10 @@
 meetings:
 - date: "2025.10.28"
   start: "15:00"
-  end: "15:50"
-  is_upcoming: false
+  end: "16:00"
+  is_upcoming: true
   details:
-    - time: "15:05"
+    - time: "15:00"
       title: "Towards a Knowledge Graph for Japanese Medical Insurance: Integrating Policy Logic, Clinical Data, and Temporal Constraints"
       speaker: "Atuhurra Jesse"
       affiliation: "Nara Institute of Science and Technology, Japan"
