@@ -1,4 +1,14 @@
 meetings:
+  - date: "2025.12.04"
+    start: "15:00"
+    end: "15:50"
+    is_upcoming: True
+    details:
+      - time: "15:05"
+        title: "Towards Responsible Death Tech: Designing for Dignity, Safety, and Emotional Resilience"
+        speaker: "Professor Elvira Perez Vallejos"
+        affiliation: "University of Nottingham"
+        abstract: "The incorporation of digital technologies into end-of-life practices—often conceptualised under the term 'Death Tech'—is fundamentally reconfiguring how mortality is understood and navigated by individuals, families, and societies in the context of artificial intelligence (AI). This presentation explores the intersection of digital wellbeing, online safety and responsible AI within this emerging domain. We examine how platforms and tools designed for memorialisation, grief support, and posthumous data management raise critical questions about privacy, consent, and emotional resilience. Drawing on principles of Responsible Research and Innovation, the session highlights risks such as digital exploitation, misinformation, and psychological harm, alongside opportunities for compassionate design and inclusive practices. By analysing real-world examples and ethical frameworks, we aim to provide actionable insights for researchers, developers, and policymakers to ensure that Death Tech promotes dignity, security, and wellbeing for all stakeholders."
   - date: "2025.10.28"
     start: "15:00"
     end: "15:50"
@@ -7,7 +17,7 @@ meetings:
       - time: "15:05"
         title: "Towards a Knowledge Graph for Japanese Medical Insurance: Integrating Policy Logic, Clinical Data, and Temporal Constraints"
         speaker: "Atuhurra Jesse"
-        affiliation: "NAIST JAPAN"
+        affiliation: "NAIST, JAPAN"
         abstract: "Knowledge graph construction for specialized domains like medical insurance presents unique challenges, particularly for non-English languages and complex regulatory environments. Existing methods often struggle with integrating intricate policy logic, temporal constraints, and heterogeneous data sources prevalent in Japanese medical insurance. This paper introduces a novel methodology for building a comprehensive, rule-aware KG tailored to the Japanese medical insurance landscape. Our pipeline leverages Large Language Models to extract structured knowledge from diverse inputs, including free form Japanese insurance texts and dense policy rule tables. We demonstrate the KG's efficacy by validating its structure and content, and by deploying it within a KG-enhanced Retrieval-Augmented Generation system for analyzing real-world patient claims. Our work addresses a critical gap in multilingual, domain-specific KG construction and provides a robust foundation for explainable AI in Japanese healthcare and insurance automation."
   - date: "2025.09.18"
     start: "15:00"
