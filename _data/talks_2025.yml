@@ -1,5 +1,5 @@
 meetings:
-- date: "2025.10.28"
+  - date: "2025.10.28"
     start: "15:00"
     end: "15:50"
     is_upcoming: false
@@ -8,7 +8,7 @@ meetings:
         title: "Towards a Knowledge Graph for Japanese Medical Insurance: Integrating Policy Logic, Clinical Data, and Temporal Constraints"
         speaker: "Atuhurra Jesse"
         affiliation: "NAIST JAPAN"
-        abstract: "Knowledge graph (KG) construction for specialized domains like medical insurance presents unique challenges, particularly for non-English languages and complex regulatory environments. Existing methods often struggle with integrating intricate policy logic, temporal constraints, and heterogeneous data sources prevalent in Japanese medical insurance. This paper introduces a novel methodology for building a comprehensive, rule-aware KG tailored to the Japanese medical insurance landscape. Our pipeline leverages Large Language Models (LLMs) to extract structured knowledge from diverse inputs, including free-form Japanese insurance texts and dense policy rule tables. We demonstrate the KG's efficacy by validating its structure and content, and by deploying it within a KG-enhanced Retrieval-Augmented Generation (RAG) system for analyzing real-world patient claims. Our work addresses a critical gap in multilingual, domain-specific KG construction and provides a robust foundation for explainable AI in Japanese healthcare and insurance automation."
+        abstract: "Knowledge graph construction for specialized domains like medical insurance presents unique challenges, particularly for non-English languages and complex regulatory environments. Existing methods often struggle with integrating intricate policy logic, temporal constraints, and heterogeneous data sources prevalent in Japanese medical insurance. This paper introduces a novel methodology for building a comprehensive, rule-aware KG tailored to the Japanese medical insurance landscape. Our pipeline leverages Large Language Models to extract structured knowledge from diverse inputs, including free form Japanese insurance texts and dense policy rule tables. We demonstrate the KG's efficacy by validating its structure and content, and by deploying it within a KG-enhanced Retrieval-Augmented Generation system for analyzing real-world patient claims. Our work addresses a critical gap in multilingual, domain-specific KG construction and provides a robust foundation for explainable AI in Japanese healthcare and insurance automation."
   - date: "2025.09.18"
     start: "15:00"
     end: "15:50"
