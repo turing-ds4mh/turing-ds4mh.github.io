@@ -36,7 +36,7 @@
 
         <!-- Check if there is data for confirmed future talks -->
         {% assign has_future_talk = false %}
-        {% for meeting in site.data.talks_2025.meetings %}
+        {% for meeting in site.data.talks_2026.meetings %}
         {% if meeting.is_upcoming == true %}
         {% assign has_future_talk = true %}
         {% endif %}
@@ -56,7 +56,7 @@
           </tr>
 
           <!-- Manually adjust on an annual basis -->
-          {% for meeting in site.data.talks_2025.meetings %}
+          {% for meeting in site.data.talks_2026.meetings %}
           {% if meeting.is_upcoming == true %}
           <tr>
             <td>{{ meeting.date }} </td>
