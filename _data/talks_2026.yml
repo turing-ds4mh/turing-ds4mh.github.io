@@ -5,7 +5,7 @@ meetings:
     is_upcoming: True
     details:
       - time: "15:05"
-        title: "TBD"
-        speaker: "Aseem Srivastava (Postdoctoral Associate, NLP)"
-        affiliation: "Mohamed bin Zayed University"
-        abstract: "TBD"
+        title: "Structure and Psycho-social Safety as Language Models Move Closer to Human."
+        speaker: "Aseem Srivastava (Postdoctoral Researcher, MBZUAI, UAE) and Zuhair Hasn Shaik (Research Engineer, MBZUAI, UAE)"
+        affiliation: "MBZUAI, UAE"
+        abstract: "The role of AI in social and mental wellbeing is undergoing a fundamental shift, from systems that mediate human interaction to systems that increasingly function as direct social counterparts (aka AI companions). This shift introduces a critical challenge: as AI moves closer to human, the cost of missing structure increases, and the question of social safety becomes important. Despite their ability, language models remain fragile in socially vulnerable contexts, largely because current architectures lack explicit and interpretable representations of human vulnerability. In the absence of such a structure, safety mechanisms based on output filtering or post-hoc moderation are insufficient, particularly in sensitive settings involving emotional support, cultural nuance, and longitudinal interaction. We argue that as AI systems transition from mediators to companions, safety must be ensured in interpretable, taxonomical representations of psychosocial states rather than surface-level control of generated text. Addressing this gap requires rethinking how vulnerability, risk, and social context are represented, evaluated, and constrained within language models, motivating a broader research agenda at the intersection of NLP, AI safety, and mental and social wellbeing. In this talk, we will outline this shift through empirical examples, discuss emerging failure modes and design principles for socially aligned language models, and highlight open research challenges for building systems that interact safely and responsibly with human vulnerability."
