@@ -1,5 +1,5 @@
 meetings:
-  - date: "2026-02-19"
+  - date: "2026.02.19"
     start: "15:00"
     end: "15:50"
     is_upcoming: false
@@ -10,7 +10,7 @@ meetings:
         affiliation: "LMU Munich"
         abstract: "Causal machine learning (ML) offers flexible, data-driven methods for predicting treatment outcomes including efficacy and toxicity, thereby supporting the assessment and safety of drugs. A key benefit of causal ML is that it allows for estimating individualized treatment effects, so that clinical decision-making can be personalized to individual patient profiles. Causal ML can be used in combination with both clinical trial data and real-world data, such as clinical registries and electronic health records, but caution is needed to avoid biased or incorrect predictions. In this talk, we discuss the benefits of causal ML (relative to traditional statistical or ML approaches) and outline the key components and steps. Finally, we provide recommendations for the reliable use of causal ML and effective translation into the clinic."
 
-  - date: "2026-01-22"
+  - date: "2026.01.22"
     start: "15:00"
     end: "15:50"
     is_upcoming: false
