@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
@@ -11,10 +11,9 @@
 
   <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <![endif]-->
+  <![endif]-->
 
   {% seo %}
-
   {% include head-custom.html %}
 </head>
 
@@ -23,7 +22,7 @@
     <div class="inner">
       <div class="topnav">
         {% for nav in site.data.navigation.main %}
-        <a href="{{ '/' | absolute_url }}{{ nav.url }}">{{ nav.title }}</a>
+        <a href="{{ nav.url | relative_url }}">{{ nav.title }}</a>
         {% endfor %}
       </div>
     </div>
@@ -35,16 +34,16 @@
 
         {{ content }}
 
-        <!-- Check if there is data for confirmed future talks -->
+        <!-- Check if there is data for confirmed future talks in 2026 -->
         {% assign has_future_talk = false %}
-        {% for meeting in site.data.talks_2025.meetings %}
-        {% if meeting.is_upcoming == true %}
-        {% assign has_future_talk = true %}
-        {% endif %}
+        {% for meeting in site.data.talks_2026.meetings %}
+          {% if meeting.is_upcoming == true %}
+            {% assign has_future_talk = true %}
+          {% endif %}
         {% endfor %}
 
         {% if has_future_talk == true %}
-        <h2> Upcoming Talks </h2>
+        <h2>Upcoming Talks</h2>
         <table border="1">
           <tr>
             <th style="width:100px;">Date</th>
@@ -53,62 +52,123 @@
             <th style="width:800px;">Title</th>
           </tr>
 
-          <!-- Manually adjust on an annual basis -->
-          {% for meeting in site.data.talks_2025.meetings %}
-          {% if meeting.is_upcoming == true %}
-          <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
-            <td></td>
-            <td>Introduction</td>
-          </tr>
-          {% for talk in meeting.details %}
-          <tr>
-            <td></td>
-            <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
-            <td><strong>{{ talk.title }}</strong>
-              <p>{{ talk.abstract }} </p>
-            </td>
-            {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
-            <td><strong>{{ talk.title }}</strong>
-              <p>{{ talk.abstract }} </p>
-            </td>
+          {% for meeting in site.data.talks_2026.meetings %}
+            {% if meeting.is_upcoming == true %}
+            <tr>
+              <td>{{ meeting.date }}</td>
+              <td>{{ meeting.start }}</td>
+              <td></td>
+              <td>Introduction</td>
+            </tr>
+
+            {% for talk in meeting.details %}
+            <tr>
+              <td></td>
+              <td>{{ talk.time }}</td>
+              {% if talk.speaker_2 %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})<br>
+                <strong>{{ talk.speaker_2 }}</strong><br>
+                ({{ talk.affiliation_2 }})
+              </td>
+              <td>
+                <strong>{{ talk.title }}</strong>
+                <p>{{ talk.abstract }}</p>
+              </td>
+              {% else %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})
+              </td>
+              <td>
+                <strong>{{ talk.title }}</strong>
+                <p>{{ talk.abstract }}</p>
+              </td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+
+            <tr>
+              <td></td>
+              <td>{{ meeting.end }}</td>
+              <td></td>
+              <td>After talks discussion</td>
+            </tr>
             {% endif %}
-          </tr>
-          {% endfor %}
-          <tr>
-            <td></td>
-            <td>{{ meeting.end }}</td>
-            <td></td>
-            <td>After talks discussion</td>
-          </tr>
-          {% endif %}
           {% endfor %}
         </table>
         {% endif %}
 
         <hr class="solid">
 
-        <h2> Previous Talks </h2>
+        <h2>Previous Talks</h2>
         <ul>
-          <li><a href="#2025"> 2025 </a></li>
-          <li><a href="#2024"> 2024 </a></li>
-          <li><a href="#2023"> 2023 </a></li>
-          <li><a href="#2022"> 2022 </a></li>
-          <li><a href="#2021"> 2021 </a></li>
-          <li><a href="#2020"> 2020 </a></li>
-          <li><a href="#2018-2019"> 2018-2019 </a></li>
+          <li><a href="#2026">2026</a></li>
+          <li><a href="#2025">2025</a></li>
+          <li><a href="#2024">2024</a></li>
+          <li><a href="#2023">2023</a></li>
+          <li><a href="#2022">2022</a></li>
+          <li><a href="#2021">2021</a></li>
+          <li><a href="#2020">2020</a></li>
+          <li><a href="#2018-2019">2018-2019</a></li>
         </ul>
 
         <hr class="solid">
 
-        <a id="2025">
-          <h3> 2025 </h3>
-        </a>
+        <a id="2026"></a>
+        <h3>2026</h3>
+
+        <table border="1">
+          <tr>
+            <th style="width:100px;">Date</th>
+            <th style="width:80px;">Time</th>
+            <th style="width:250px;">Presenter</th>
+            <th style="width:800px;">Title</th>
+          </tr>
+          {% for meeting in site.data.talks_2026.meetings %}
+            {% if meeting.is_upcoming != true %}
+            <tr>
+              <td>{{ meeting.date }}</td>
+              <td>{{ meeting.start }}</td>
+              <td></td>
+              <td>Introduction</td>
+            </tr>
+
+            {% for talk in meeting.details %}
+            <tr>
+              <td></td>
+              <td>{{ talk.time }}</td>
+              {% if talk.speaker_2 %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})<br>
+                <strong>{{ talk.speaker_2 }}</strong><br>
+                ({{ talk.affiliation_2 }})
+              </td>
+              <td>{{ talk.title }}</td>
+              {% else %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})
+              </td>
+              <td>{{ talk.title }}</td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+
+            <tr>
+              <td></td>
+              <td>{{ meeting.end }}</td>
+              <td></td>
+              <td>After talks discussion</td>
+            </tr>
+            {% endif %}
+          {% endfor %}
+        </table>
+
+        <a id="2025"></a>
+        <h3>2025</h3>
 
         <table border="1">
           <tr>
@@ -118,41 +178,48 @@
             <th style="width:800px;">Title</th>
           </tr>
           {% for meeting in site.data.talks_2025.meetings %}
-          {% if meeting.is_upcoming != true %}
-          <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
-            <td></td>
-            <td>Introduction</td>
-          </tr>
-          {% for talk in meeting.details %}
-          <tr>
-            <td></td>
-            <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
-            <td>{{ talk.title }}</td>
-            {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
-            <td>{{ talk.title }}</td>
+            {% if meeting.is_upcoming != true %}
+            <tr>
+              <td>{{ meeting.date }}</td>
+              <td>{{ meeting.start }}</td>
+              <td></td>
+              <td>Introduction</td>
+            </tr>
+
+            {% for talk in meeting.details %}
+            <tr>
+              <td></td>
+              <td>{{ talk.time }}</td>
+              {% if talk.speaker_2 %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})<br>
+                <strong>{{ talk.speaker_2 }}</strong><br>
+                ({{ talk.affiliation_2 }})
+              </td>
+              <td>{{ talk.title }}</td>
+              {% else %}
+              <td>
+                <strong>{{ talk.speaker }}</strong><br>
+                ({{ talk.affiliation }})
+              </td>
+              <td>{{ talk.title }}</td>
+              {% endif %}
+            </tr>
+            {% endfor %}
+
+            <tr>
+              <td></td>
+              <td>{{ meeting.end }}</td>
+              <td></td>
+              <td>After talks discussion</td>
+            </tr>
             {% endif %}
-          </tr>
-          {% endfor %}
-          <tr>
-            <td></td>
-            <td>{{ meeting.end }}</td>
-            <td></td>
-            <td>After talks discussion</td>
-          </tr>
-          {% endif %}
           {% endfor %}
         </table>
 
-        <!-- For earlier years we assume nothing will be is_upcoming -->
-        <a id="2024">
-          <h3> 2024 </h3>
-        </a>
+        <a id="2024"></a>
+        <h3>2024</h3>
 
         <table border="1">
           <tr>
@@ -163,25 +230,34 @@
           </tr>
           {% for meeting in site.data.talks_2024.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -191,9 +267,8 @@
           {% endfor %}
         </table>
 
-        <a id="2023">
-          <h3> 2023 </h3>
-        </a>
+        <a id="2023"></a>
+        <h3>2023</h3>
 
         <table border="1">
           <tr>
@@ -204,25 +279,34 @@
           </tr>
           {% for meeting in site.data.talks_2023.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -232,9 +316,8 @@
           {% endfor %}
         </table>
 
-        <a id="2022">
-          <h3> 2022 </h3>
-        </a>
+        <a id="2022"></a>
+        <h3>2022</h3>
 
         <table border="1">
           <tr>
@@ -245,25 +328,34 @@
           </tr>
           {% for meeting in site.data.talks_2022.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -273,9 +365,8 @@
           {% endfor %}
         </table>
 
-        <a id="2021">
-          <h3> 2021 </h3>
-        </a>
+        <a id="2021"></a>
+        <h3>2021</h3>
 
         <table border="1">
           <tr>
@@ -286,25 +377,34 @@
           </tr>
           {% for meeting in site.data.talks_2021.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -314,9 +414,8 @@
           {% endfor %}
         </table>
 
-        <a id="2020">
-          <h3> 2020 </h3>
-        </a>
+        <a id="2020"></a>
+        <h3>2020</h3>
 
         <table border="1">
           <tr>
@@ -327,25 +426,34 @@
           </tr>
           {% for meeting in site.data.talks_2020.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -355,9 +463,8 @@
           {% endfor %}
         </table>
 
-        <a id="2018-2019">
-          <h3> 2018-2019 </h3>
-        </a>
+        <a id="2018-2019"></a>
+        <h3>2018-2019</h3>
 
         <table border="1">
           <tr>
@@ -366,27 +473,36 @@
             <th style="width:250px;">Presenter</th>
             <th style="width:800px;">Title</th>
           </tr>
-          {% for meeting in site.data.talks_2018-2019.meetings %}
+          {% for meeting in site.data.talks_2018_2019.meetings %}
           <tr>
-            <td>{{ meeting.date }} </td>
-            <td>{{ meeting.start }} </td>
+            <td>{{ meeting.date }}</td>
+            <td>{{ meeting.start }}</td>
             <td></td>
             <td>Introduction</td>
           </tr>
+
           {% for talk in meeting.details %}
           <tr>
             <td></td>
             <td>{{ talk.time }}</td>
-            {% if talk contains "speaker_2" %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }}), <br> <strong>{{ talk.speaker_2 }}
-              </strong> <br> ({{ talk.affiliation_2 }}) </td>
+            {% if talk.speaker_2 %}
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})<br>
+              <strong>{{ talk.speaker_2 }}</strong><br>
+              ({{ talk.affiliation_2 }})
+            </td>
             <td>{{ talk.title }}</td>
             {% else %}
-            <td><strong>{{ talk.speaker }} </strong> <br> ({{ talk.affiliation }})</td>
+            <td>
+              <strong>{{ talk.speaker }}</strong><br>
+              ({{ talk.affiliation }})
+            </td>
             <td>{{ talk.title }}</td>
             {% endif %}
           </tr>
           {% endfor %}
+
           <tr>
             <td></td>
             <td>{{ meeting.end }}</td>
@@ -396,42 +512,38 @@
           {% endfor %}
         </table>
 
-
       </section>
 
-
-
       <aside id="sidebar">
+        <a href="http://www.turing.ac.uk/">
+          <img src="{{ '/assets/images/turing_logo.png' | relative_url }}" width="100" style="padding-bottom:10px">
+        </a>
 
-        <a href="http://www.turing.ac.uk/"><img src="assets/images/turing_logo.png" width=100
-            style="padding-bottom:10px"></a>
+        <br><br>
 
-        <br> <br>
+        <h2>Organisers</h2>
+        <a href="https://www.maths.ox.ac.uk/people/terry.lyons">Terry Lyons</a>,
+        <a href="https://www2.warwick.ac.uk/fac/sci/dcs/people/maria_liakata">Maria Liakata</a>,
+        <a href="https://datasig.ac.uk/people/yue-wu">Yue Wu</a>,
+        <a href="https://sites.google.com/view/iqra-ali?usp=sharing">Iqra Ali</a>, and
+        <a href="#">Danqi Zhuang</a>.
+        (Previous: <a href="https://twitter.com/bwang482">Bo Wang</a>, Emilio Ferrucci,
+        <a href="https://j-chim.github.io/">Jenny Chim</a>.)
 
-        <h2> Organisers </h2>
-<a href="https://www.maths.ox.ac.uk/people/terry.lyons">Terry Lyons</a>, 
-<a href="https://www2.warwick.ac.uk/fac/sci/dcs/people/maria_liakata">Maria Liakata</a>, 
-<a href="https://datasig.ac.uk/people/yue-wu">Yue Wu</a>, 
-<a href="https://sites.google.com/view/iqra-ali?usp=sharing">Iqra Ali</a>, and 
-<a href="#">Danqi Zhuang</a>. 
-(Previous: <a href="https://twitter.com/bwang482">Bo Wang</a>, Emilio Ferrucci, 
-<a href="https://j-chim.github.io/">Jenny Chim</a>.)
         <br>
 
-        <h2> Location </h2>
-        <p><a href="http://www.turing.ac.uk/">Alan Turing Institute</a>, London, UK.
-          The Alan Turing Institute is the national institute for data science, with headquarters at the British
-          Library.</p>
+        <h2>Location</h2>
+        <p>
+          <a href="http://www.turing.ac.uk/">Alan Turing Institute</a>, London, UK.
+          The Alan Turing Institute is the national institute for data science, with headquarters at the British Library.
+        </p>
 
-
-        <h2> Joining </h2>
-        To join our mailing list, please complete this <b><a href="https://forms.office.com/e/N0SaJbSnek">sign-up
-            form</a></b>.
-
+        <h2>Joining</h2>
+        To join our mailing list, please complete this
+        <b><a href="https://forms.office.com/e/N0SaJbSnek">sign-up form</a></b>.
       </aside>
     </div>
   </div>
 
 </body>
-
 </html>
