@@ -1,14 +1,15 @@
 meetings:
   - date: "2026.03.26"
-  start: "15:00"
-  end: "16:00"
-  is_upcoming: true
-  details:
-    - time: "15:05"
-      title: "Voice-Based Psychiatric Assessment in the Real World"
-      speaker: "George Fairs (Machine Learning Researcher, thymia) and Stefano Goria (Chief Technology Officer & Co-Founder, thymia)"
-      affiliation: "thymia"
-      abstract: "We present a multimodal Bayesian network for symptom-level prediction of depression and anxiety from speech and voice data, developed and deployed as a real-world clinical product and evaluated on over 30,000 unique speakers. The model integrates paralinguistic and linguistic features through symptom-specific surrogate models into a joint Bayesian network that learns posterior distributions over individual symptom severities, inter-symptom relationships, and overall condition probabilities (depression ROC-AUC = 0.842, anxiety = 0.831; ECE ≤ 0.018). We examine multimodal integration, cross-channel redundancy, demographic fairness across multiple axes, direct clinician intervention in model predictions, and service user acceptability — arguing that Bayesian networks offer a principled, explainable, and intervenable framework for clinical translation of digital phenotyping."
+    start: "15:00"
+    end: "16:00"
+    is_upcoming: true
+    details:
+      - time: "15:05"
+        title: "Voice-Based Psychiatric Assessment in the Real World"
+        speaker: "George Fairs (Machine Learning Researcher, thymia) and Stefano Goria (Chief Technology Officer & Co-Founder, thymia)"
+        affiliation: "thymia"
+        abstract: "We present a multimodal Bayesian network for symptom-level prediction of depression and anxiety from speech and voice data, developed and deployed as a real-world clinical product and evaluated on over 30,000 unique speakers. The model integrates paralinguistic and linguistic features through symptom-specific surrogate models into a joint Bayesian network that learns posterior distributions over individual symptom severities, inter-symptom relationships, and overall condition probabilities (depression ROC-AUC = 0.842, anxiety = 0.831; ECE ≤ 0.018). We examine multimodal integration, cross-channel redundancy, demographic fairness across multiple axes, direct clinician intervention in model predictions, and service user acceptability — arguing that Bayesian networks offer a principled, explainable, and intervenable framework for clinical translation of digital phenotyping."
+
   - date: "2026.02.19"
     start: "15:00"
     end: "15:50"
