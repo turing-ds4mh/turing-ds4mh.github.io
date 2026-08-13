@@ -1,4 +1,14 @@
 meetings:
+  - date: "2026.06.25"
+    start: "15:00"
+    end: "16:00"
+    is_upcoming: false
+    details:
+      - time: "15:05"
+        title: "The Next Generation of Clinical Feedback Systems for Personalised Psychological Therapy"
+        speaker: "Dr. Antonia Vehlen (Research Associate in Clinical Psychology and Psychotherapy at the University of Trier, Germany)"
+        affiliation: "University of Trier"
+        abstract: "Despite decades of psychotherapy research and the development of increasingly refined treatment packages, a substantial proportion of patients still does not benefit sufficiently from psychological therapy. One promising way forward is data-driven treatment personalization through routine monitoring, clinical feedback, and decision support systems. Such systems show small but robust additive effects, yet their clinical value depends on whether feedback is actually integrated into therapeutic practice. This talk presents the Trier Treatment Navigator (TTN) as a prospectively evaluated feedback system designed to support personalized treatment planning and process monitoring in outpatient psychological therapy. Building on evidence that feedback is most useful when it becomes part of therapists’ clinical reasoning and decision-making, the talk outlines two complementary directions for the next generation of feedback systems. The first direction focuses on the same core modality but improved implementation: making feedback more feasible, flexible, and useful for therapists in routine outpatient care, including private practice settings. A current implementation project will be presented, including its study design and first preliminary data. The second direction focuses on richer modalities and better clinical insight. Here, I will present an ongoing SMART-study in the university outpatient clinic at Trier University that integrates LLM-based ratings, LLM-generated summaries, EMA, and other AI-supported feedback elements to improve early treatment recommendations, support case conceptualization, and enrich feedback during the course of therapy. Together, these projects demonstrate how feedback systems can develop from basic monitoring tools into adaptable clinical feedback infrastructures that keep pace with recent AI advances while prioritising therapist support and personalised patient care."
   - date: "2026.03.26"
     start: "15:00"
     end: "16:00"
