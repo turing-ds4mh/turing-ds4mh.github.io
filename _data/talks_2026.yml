@@ -2,7 +2,7 @@ meetings:
   - date: "2026.03.26"
     start: "15:00"
     end: "16:00"
-    is_upcoming: true
+    is_upcoming: false
     details:
       - time: "15:05"
         title: "Voice-Based Psychiatric Assessment in the Real World"
